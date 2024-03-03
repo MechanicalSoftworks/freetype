@@ -595,12 +595,12 @@ if (NOT SKIP_INSTALL_LIBRARIES AND NOT SKIP_INSTALL_ALL)
       COMPONENT libraries)
   install(
     EXPORT freetype-targets
-      DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/freetype
+      DESTINATION ${CMAKE_INSTALL_CMAKEDIR}/freetype
       FILE freetype-config.cmake
       COMPONENT headers)
   install(
     FILES ${PROJECT_BINARY_DIR}/freetype-config-version.cmake
-    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/freetype
+    DESTINATION ${CMAKE_INSTALL_CMAKEDIR}/freetype
     COMPONENT headers)
 endif ()
 
